@@ -29,7 +29,6 @@ var host = Host.CreateDefaultBuilder()
     .ConfigureLogging((context, logger) => {
 
         logger.ClearProviders();
-        logger.AddConsole();
         logger.AddDebug();
     }).Build();
 

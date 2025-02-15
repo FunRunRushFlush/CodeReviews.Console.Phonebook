@@ -15,7 +15,7 @@ public class PhonebookDataAccess
 
     public async Task<List<PhonebookTable>> GetAllPhonebookData()
     {
-        var result = await _dbContext.PhonebookTable.AsNoTracking().ToListAsync();
+        var result = await _dbContext.PhonebookTable.ToListAsync();
         return result;
     }
     public async Task InsertPhonebookData(PhonebookTable phonebook)
@@ -37,6 +37,7 @@ public class PhonebookDataAccess
             await _dbContext.SaveChangesAsync();
         }
     }
+
     public async Task DeletePhonebookData(PhonebookTable phonebook)
     {
         var entityToDelete = await _dbContext.PhonebookTable.FindAsync(phonebook.Id);
