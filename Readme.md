@@ -11,8 +11,7 @@ Inspired by the [C# Academy Phonebook Project](https://thecsharpacademy.com/proj
 
 ## How It Works
 
-### Console Application:
-1. **Launch the App.**
+1. **Launch the App**
 2. **Navigate the Menu** using arrow keys.
 3. **View Contacts:** See an overview of saved contacts.
 4. **Manage Contacts:** Add, edit, or remove contacts.

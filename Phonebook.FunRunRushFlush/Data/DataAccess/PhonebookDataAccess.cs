@@ -21,7 +21,7 @@ public class PhonebookDataAccess
     public async Task InsertPhonebookData(PhonebookTable phonebook)
     {
         await _dbContext.PhonebookTable.AddAsync(phonebook);
-        var result = await _dbContext.SaveChangesAsync();
+        await _dbContext.SaveChangesAsync();
     }
 
     public async Task UpdatePhonebookData(PhonebookTable phonebook)
